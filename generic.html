@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title></title>
+		<title>Projects - Muzam Rasheed</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/request-modal.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -23,8 +24,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li ><a href="index.html"> CliniQuiz </a></li>
-							<li><a href="elements.html"> ABOUT </a></li>
+							<li><a href="index.html"> ABOUT </a></li>
 							<li class="active"><a href="generic.html"> PROJECTS </a></li>
 						</ul>
 						<ul class="icons">
@@ -39,38 +39,72 @@
 				<div id="main">
 					<!-- Posts -->
 						<section class="posts">
+
 							<article>
 								<header>
 									<span class="date"></span>
-									<h2><a href="#"> Rest-Api Automation <br /></a></h2>
+									<h2><a href="#" class="request-access" data-project="quality_assurance_ai"> quality_assurance_ai <br /></a></h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/API.jpg" alt="" /></a>
-								<p>This REST API automation project is developed in Java using the REST Assured libraries. It is structured as a Maven project with TestNG, utilizing a BDD framework. Along with necessary files, framework includes feature files that have detailed test cases, a runner class for test execution, and a property file for necessary configurations. Additionally, it employs parallel test execution and integrates comprehensive logging.</p>
+								<a href="#" class="image fit"><img src="images/AI_Test_Case_Generator_Cover.png" alt="" /></a>
+								<p>QA teams spend a large share of every sprint turning Jira tickets into manual test cases, often rewriting coverage that already exists, with no consistent way to measure quality. quality_assurance_ai applies generative AI to that work as a governed pipeline, with QA engineers approving its input and reviewing its output. It reads a ticket from Jira Cloud, turns it into structured, traceable requirements, and generates test cases in our defined test case format. Before writing anything new it checks a central test case repository, so existing tests are reused and only the gaps get new test cases. Every AI output is validated in code and scored by an independent AI reviewer for coverage, accuracy and hallucination, which makes test design faster, consistent and measurable.</p>
 								<ul class="actions special">
-									<li><a href="https://github.com/muzamrasheed307/RestApi_automation" class="button"> PROJECT </a></li>
+									<li><a href="https://github.com/muzamrasheed307/PerformanecTest/tree/main" class="button request-access" data-project="quality_assurance_ai"> PROJECT </a></li>
 								</ul>
 							</article>
 							<article>
 								<header>
 									<span class="date"></span>
-									<h2><a href="#"> Performance Testing with JMeter <br /></a></h2>
+									<h2><a href="#" class="request-access" data-project="API Testing - CLP">API Testing - CLP <br /></a></h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/performance.jpg" alt="" /></a>
-								<p>This performance test aims to assess the application's capacity to handle concurrent access by 5,000 users. The testing scope includes evaluating system performance and stability as these users simultaneously attempt to log in. By simulating high-load conditions, we will identify potential bottlenecks and ensure the application's responsiveness and reliability under peak usage. The test will provide critical insights into the application's scalability, helping us to enhance its performance and user experience. This assessment is essential for guaranteeing that our application can efficiently support a large user base without compromising functionality or speed</p>
+								<a href="#" class="image fit"><img src="images/amia_api.jpg" alt="" /></a>
+								<p>A production-grade API automation framework that validates the complete loyalty lifecycle — from member enrollment and points accrual to promotion-driven reward issuance and tier progression. Built in Java with REST Assured under a BDD-driven, Maven-structured architecture, the suite enforces end-to-end contract integrity across every reward trigger, promotional rule, and redemption event. Parallel execution, environment-portable configuration, and structured transaction logging deliver full traceability from API call to business outcome in a single run.</p>
 								<ul class="actions special">
-									<li><a href="https://github.com/muzamrasheed307/PerformanecTest/tree/main" class="button"> PROJECT </a></li>
+									<li><a href="https://github.com/muzamrasheed307/RestApi_automation" class="button request-access" data-project="API Testing - CLP"> PROJECT </a></li>
 								</ul>
 							</article>
 							<article>
 								<header>
 									<span class="date"></span>
-									<h2><a href="#"> Penetration Test <br /></a></h2>
+									<h2><a href="#" class="request-access" data-project="UI Test Automation — Automotive Service intake Application"> UI Test Automation — Automotive Service intake Application<br /></a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/carsideAutomation.jpg" alt="" /></a>
+								<p>End-to-end UI automation suite for Automotive service-lane workflow, built on Java, Playwright, Cucumber BDD, and Maven. Covers the full intake lifecycle — multi-path vehicle lookup (plate scan, VIN, YMME), fleet account resolution, customer creation, service selection, visual and tread depth inspection with photo capture, signature collection, and work order generation. Network interception captures and logs all API calls fired during UI execution, bridging front-end behavior with back-end contract validation in a single run. Gherkin-authored, Data-driven scenarios paired with per-assertion structured logging and timestamped full-page screenshots deliver end-to-end traceability across every test execution.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/muzamrasheed307/Pen_test" class="button request-access" data-project="UI Test Automation — Automotive Service intake Application"> PROJECT </a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2><a href="#" class="request-access" data-project="UI Test Automation — Courtesy Vehicle Inspection">UI Test Automation — Courtesy Vehicle Inspection <br /></a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/CVI.jpg" alt="" /></a>
+								<p>End-to-end UI automation suite for a 23-section Courtesy Vehicle Inspection, covering inspection-type branching, required-section enforcement, condition evaluations, brake and tread depth measurements, and Save & Print gate validation — each Inspection type running as an isolated scenario with structured per-assertion logging and timestamped screenshots</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/muzamrasheed307/Pen_test" class="button request-access" data-project="UI Test Automation — Courtesy Vehicle Inspection"> PROJECT </a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2><a href="#" class="request-access" data-project="Fleet Pricing & Tire Sourcing — API Automation Suite"> Fleet Pricing & Tire Sourcing — API Automation Suite <br /></a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/fleetandTires.png" alt="" /></a>
+								<p>A dual-domain, data-driven API automation framework built in Java with REST Assured, Apache POI, and Cucumber, validating pricing contracts across 200+ fleet accounts and multi-vendor tire sourcing integrations within a single execution pipeline. Excel workbooks serve as the test data layer — fleet account rows drive contract rate assertions, fallback pricing validation, and payload integrity checks, while vehicle catalog records (year, make, model, engine, and internal vehicle code) parameterize sourcing calls against each vendor endpoint.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/muzamrasheed307/Pen_test" class="button request-access" data-project="Fleet Pricing & Tire Sourcing — API Automation Suite"> PROJECT </a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date"></span>
+									<h2><a href="#" class="request-access" data-project="Penetration Test"> Penetration Test <br /></a></h2>
 								</header>
 								<a href="#" class="image fit"><img src="images/pentest.jpg" alt="" /></a>
 								<p>The primary objective of this assessment was to analyze the security vulnerabilities within Rekall's web applications, networks, and systems. This assessment aimed to identify exploitable weaknesses and offer actionable recommendations to enhance the overall security of the environment.<br>
 									We utilized our established vulnerability testing methodology to evaluate all relevant web applications, networks, and systems within the scope.</p>
 								<ul class="actions special">
-									<li><a href="https://github.com/muzamrasheed307/Pen_test" class="button"> PROJECT </a></li>
+									<li><a href="https://github.com/muzamrasheed307/Pen_test" class="button request-access" data-project="Penetration Test"> PROJECT </a></li>
 								</ul>
 							</article>
 							<article>
@@ -89,10 +123,37 @@
 				<!-- Footer -->
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Muzam Rasheed</li><li>2024 </li></ul>
+						<ul><li>&copy; Muzam Rasheed</li><li>2026 </li></ul>
 					</div>
 
 			</div>
+
+		<!-- Request Access Modal -->
+		<div id="ra-overlay" class="ra-overlay" aria-hidden="true">
+			<div class="ra-modal" role="dialog" aria-modal="true" aria-labelledby="ra-title">
+				<button type="button" class="ra-close" data-ra-close aria-label="Close">&times;</button>
+				<h2 id="ra-title">Request Access</h2>
+				<p class="ra-project" id="ra-project"></p>
+				<p class="ra-intro">This project is in a private repository. Share your details below and I will review your request. Once approved, you will receive access by email.</p>
+				<form id="ra-form" novalidate>
+					<div class="field"><label for="ra-name">Full Name</label><input type="text" name="name" id="ra-name" required autocomplete="name" maxlength="100" /></div>
+					<div class="field"><label for="ra-email">Email</label><input type="email" name="email" id="ra-email" required autocomplete="email" maxlength="150" /></div>
+					<div class="field"><label for="ra-github">GitHub Username</label><input type="text" name="github_username" id="ra-github" required maxlength="39" pattern="[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})" title="Letters, numbers and hyphens only" /></div>
+					<div class="field"><label for="ra-company">Company / Role <span class="ra-optional">(optional)</span></label><input type="text" name="company_role" id="ra-company" maxlength="150" /></div>
+					<input type="hidden" name="project" id="ra-project-field" />
+					<input type="hidden" name="_subject" id="ra-subject-field" />
+					<div class="ra-hp" aria-hidden="true"><label for="ra-gotcha">Leave this empty</label><input type="text" name="_gotcha" id="ra-gotcha" tabindex="-1" autocomplete="off" /></div>
+					<ul class="actions"><li><input type="submit" id="ra-submit" class="primary" value="Send Request" /></li><li><input type="button" value="Cancel" data-ra-close /></li></ul>
+					<p class="ra-status" id="ra-status" role="status" aria-live="polite"></p>
+				</form>
+				<div class="ra-success" role="status">
+					<div class="ra-check">&#10003;</div>
+					<h3>Thank you!</h3>
+					<p>Your request has been sent. You will receive access by email once it is approved.</p>
+					<ul class="actions special"><li><input type="button" value="Close" data-ra-close /></li></ul>
+				</div>
+			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -102,6 +163,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/request-modal.js"></script>
 
 	</body>
 </html>

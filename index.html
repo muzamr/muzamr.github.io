@@ -20,7 +20,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1> Muzam Rasheed </h1>
-						<p> Co-Founder of CliniQuiz.ai    |    Senior Lead Software Quality Assurance Engineer </p>
+						<p>Software Quality Assurance Leader</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -34,8 +34,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html"> CliniQuiz </a></li>
-							<li><a href="elements.html"> ABOUT </a></li>
+							<li class="active"><a href="index.html"> ABOUT </a></li>
 							<li><a href="generic.html"> PROJECTS </a></li>
 						</ul>
 						<ul class="icons">
@@ -49,20 +48,17 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
+						<!-- Post -->
+							<section class="post">
 								<header class="major">
-									<!--<span class="date"></span>-->
-									<h2><a href="https://www.cliniquiz.ai/"> CliniQuiz.ai </a></h2>
-									<p>Unlock the full potential of Artificial Intelligence to enhance your exam preparation and deepen your understanding.<br />
-										Explore our platform to access a range of AI-generated questions designed to challenge and refine your knowledge.   Sign up to enjoy additional features such as progress tracking and the ability to revisit previous questions.<br />
-										Take advantage of this invaluable resource to thoroughly test your comprehension and excel in your upcoming examinations. Start your journey towards success today!</p>
+									<h1> INTRODUCTION </h1>
 								</header>
-								<a href="https://www.cliniquiz.ai/" class="image main"><img src="images/cliniquiz.jpg" alt="" /></a>
-								<ul class="actions special">
-								<!--	<li><a href="https://www.cliniquiz.ai/" class="button large">Full Story</a></li> -->
-								</ul>
-							</article>
+
+									<p>I am a Quality Assurance leader with more than ten years of experience across telecom, banking, consumer loyalty, and automotive services. Today I lead QA at Pep Boys, now part of Mavis Tire, where I own QA strategy, execution, and release readiness sign-off for four product streams that support store operations, technicians, and customers across roughly 800 stores nationwide.</p>
+									<p>Over the past three years, my team and I have supported more than 200 releases while our release cadence doubled. Along the way, we cut regression execution time by 80% with a new Playwright and RestAssured automation framework and reduced production defect leakage from every release to about one in four. When testing for our Verifone POS payment terminal release fell behind schedule, I stepped in to drive it to completion, helping the rollout reach 800 stores in five days. I also defined the initial test strategy for Carside, a new store application now running on about 2,400 tablets.</p>
+									<p>I believe lasting quality comes from people and process as much as from tools. I train and onboard offshore QA engineers, and I enjoy helping both offshore developers and QA engineers understand the business logic and end-to-end flows behind the applications we support. I work closely with engineering leadership, product, and project management to bring testing earlier into the lifecycle, set clear quality gates, and give decision-makers honest, data-driven insight before every release.</p>
+									<p>I am also exploring how AI can strengthen quality engineering responsibly. I designed and built an AI-assisted test design pipeline that turns Jira tickets into traceable requirements and test cases, with human approval gates, source citations, and automated checks against hallucinated output. I am motivated by the opportunity to help organizations build quality into every stage of delivery and to grow teams that take pride in their work.</p>
+							</section>
 
 						<!-- Posts -->
 							
@@ -87,24 +83,28 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form id="contact-form" method="post" action="https://formspree.io/f/xjyywdnp">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" required autocomplete="name" maxlength="100" />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" required autocomplete="email" maxlength="150" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea name="message" id="message" rows="3" required maxlength="2000"></textarea>
+									</div>
+									<input type="hidden" name="_subject" value="Portfolio contact message" />
+									<div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true"><label for="contact-gotcha">Leave this empty</label><input type="text" name="_gotcha" id="contact-gotcha" tabindex="-1" autocomplete="off" />
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" id="contact-submit" value="Send Message" /></li>
 								</ul>
+								<p id="contact-status" role="status" aria-live="polite"></p>
 								<section class="split contact">
 									<section class="alt">
 										<h3>LOCATION</h3>
@@ -128,7 +128,7 @@
 
 				<!-- Copyright -->
 						<div id="copyright">
-						<ul><li>&copy; Muzam Rasheed</li><li>2024 </li></ul>
+						<ul><li>&copy; Muzam Rasheed</li><li>2026 </li></ul>
 					</div>
 
 			</div>
@@ -141,6 +141,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact-form.js"></script>
 
 	</body>
 </html>
